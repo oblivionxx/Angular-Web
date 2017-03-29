@@ -10,6 +10,8 @@ import { HomePageComponent } from './component/home-page/home-page.component';
 import { AboutPageComponent } from './component/about-page/about-page.component';
 import { routing } from './app.routing';
 import { ProfileComponent } from './component/profile/profile.component';
+import { SpotifyComponent } from './component/spotify/spotify.component';
+import { ArtistComponent } from './component/artist/artist.component';
 
 
 @NgModule({
@@ -20,6 +22,8 @@ import { ProfileComponent } from './component/profile/profile.component';
     HomePageComponent,
     AboutPageComponent,
     ProfileComponent,
+    SpotifyComponent,
+    ArtistComponent,
   ],
   imports: [
     BrowserModule,

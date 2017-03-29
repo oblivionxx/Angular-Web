@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { GithubSearchService } from './services/github-search.service'
+import { SpotifySearchService } from './services/spotify-search.service'
 
 
 @Component({
@@ -7,7 +8,7 @@ import { GithubSearchService } from './services/github-search.service'
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
-  providers:[GithubSearchService]
+  providers:[GithubSearchService, SpotifySearchService]
 
 })
 export class AppComponent {
