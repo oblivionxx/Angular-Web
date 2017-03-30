@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { SpotifySearchService } from '../../services/spotify-search.service'
-
+import { Artist} from '../../../../Artist'
 
 @Component({
   selector: 'app-spotify',
@@ -25,15 +25,4 @@ export class SpotifyComponent implements OnInit {
   ngOnInit() {
   }
 
-}
-
-interface Artist{
-  id:number;
-  name:string;
-  genres: any;
-  albums: Album[];
-}
-
-interface Album{
-  id:number;
 }

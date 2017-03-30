@@ -6,6 +6,7 @@ import { AboutPageComponent } from './component/about-page/about-page.component'
 import { ProfileComponent } from './component/profile/profile.component';
 import { SpotifyComponent } from './component/spotify/spotify.component'
 import { ArtistComponent } from './component/artist/artist.component'
+import { AlbumComponent } from './component/album/album.component'
 
 
 const AppRoutes: Routes = [
@@ -26,8 +27,12 @@ const AppRoutes: Routes = [
         component: SpotifyComponent
     },
     {
-        path:'artisit/:id',
+        path:'spotify/artist/:id',
         component: ArtistComponent
+    },
+    {
+        path:'spotify/album/:id',
+        component: AlbumComponent
     }
 ];
  

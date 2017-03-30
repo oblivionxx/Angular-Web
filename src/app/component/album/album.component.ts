@@ -4,16 +4,17 @@ import { Artist } from '../../../../Artist'
 import { Album } from '../../../../Album'
 import { SpotifySearchService  } from '../../services/spotify-search.service'
 
+
 @Component({
-  selector: 'app-artist',
-  templateUrl: './artist.component.html',
-  styleUrls: ['./artist.component.css']
+  selector: 'app-album',
+  templateUrl: './album.component.html',
+  styleUrls: ['./album.component.css']
 })
-export class ArtistComponent implements OnInit {
+export class AlbumComponent implements OnInit {
   id: string;
   artist: Artist[];
-  albums: Album[];
-
+  album: Album[];
+  
   constructor(private _spotifySearchService: SpotifySearchService, private _route:ActivatedRoute) {
 
    }
@@ -22,14 +23,11 @@ export class ArtistComponent implements OnInit {
     this._route.params.
       map(params=>params['id'])
       .subscribe(id=>{
-        this._spotifySearchService.getArtist(id)
-          .subscribe(artist=>{
-            this.artist=artist;
+        this._spotifySearchService.getAlbum(id)
+          .subscribe(album=>{
+            this.album=album;
           })
-        this._spotifySearchService.getAlbums(id)
-          .subscribe(albums =>{
-            this.albums=albums.items;
-          })
+
       });
     }
 
