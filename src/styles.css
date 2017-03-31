@@ -35,3 +35,20 @@
     margin-top: 20px;
     width:100%;
 }
+
+.album-header{
+    margin: 20px;
+    padding: 30px;
+}
+.album-track{
+    margin: 20px;
+    padding: 30px;
+}
+
+.album-track .well{
+    
+}
+
+.album-thumb{
+    width:400px;
+}
